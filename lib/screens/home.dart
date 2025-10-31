@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import '../utils/responsive_wrapper.dart';
 import '../theme/app_theme.dart';
 import '../widgets/header.dart';
 import '../widgets/fase_card.dart';
-import '../widgets/section_title.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

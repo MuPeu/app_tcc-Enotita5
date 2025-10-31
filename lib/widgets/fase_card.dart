@@ -5,7 +5,7 @@ class FaseCard extends StatelessWidget {
   final String titulo;
   final String descricao;
   final String imagemUrl;
-  final VoidCallback? onTap; // 👈 adiciona callback opcional para navegação
+  final VoidCallback? onTap;
 
   const FaseCard({
     super.key,
@@ -18,7 +18,7 @@ class FaseCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onTap, // 👈 permite navegação
+      onTap: onTap,
       child: SizedBox(
         width: 372,
         height: 100,
@@ -43,7 +43,7 @@ class FaseCard extends StatelessWidget {
                 child: DecoratedBox(
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('../src/assets/imgs/icon-fase1.png'),
+                      image: AssetImage(imagemUrl),
                       fit: BoxFit.fill,
                     ),
                   ),
