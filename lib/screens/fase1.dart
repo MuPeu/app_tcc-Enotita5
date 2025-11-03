@@ -18,14 +18,12 @@ class Fase1Page extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Header(title: 'Porta de Fergas'),
-
               Image.asset(
                 '../src/assets/imgs/fase1-header.png',
                 fit: BoxFit.cover,
                 width: double.infinity,
                 height: 225,
               ),
-
               Container(
                 width: double.infinity,
                 color: AppTheme.secondaryColor,
@@ -43,12 +41,50 @@ class Fase1Page extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    const Text(
-                      "Primeira fase onde o jogador aprende as mecânicas básicas em um labirinto dentro de uma floresta densa.\nExplore os caminhos sombrios, descubra segredos escondidos e derrote as pequenas criaturas que guardam a entrada para o coração da floresta.",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        height: 1.5,
+                    Text.rich(
+                      TextSpan(
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          height: 1.5,
+                        ),
+                        children: [
+                          TextSpan(
+                            text: "Resumo Geral: ",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          const TextSpan(
+                            text: "Esta fase será a primeira do jogo, sendo por ela onde o player aprenderá o básico das mecânicas do jogo. O objetivo é achar o caminho correto em um labirinto que se formou por uma floresta densa — uma fase focada em resolver puzzles em uma floresta grande e ensolarada.\n\n",
+                          ),
+                          TextSpan(
+                            text: "Ambientação e Estética: ",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          const TextSpan(
+                            text: "A floresta é densa e labiríntica; entre as árvores só é possível encontrar caminhos cobertos pela forte neblina, que lentamente se dissipa sob o sol do meio-dia.\n\n",
+                          ),
+                          TextSpan(
+                            text: "Estrutura do Layout: ",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          const TextSpan(
+                            text: "A fase é fechada, com caminhos que levam a interseções, e cada nova sala apresenta uma variação na quantidade de interseções.\n\n",
+                          ),
+                          TextSpan(
+                            text: "Elementos de Jogabilidade: ",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          const TextSpan(
+                            text: "Ao escolher o caminho errado, o player será teletransportado para o ponto inicial da primeira sala.\n\n",
+                          ),
+                          TextSpan(
+                            text: "Progressão e Desafios: ",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          const TextSpan(
+                            text: "A fase começa em uma trilha com três caminhos. Se o jogador escolher o correto, avança; se errar, volta ao início. A cada nova sala, o número de caminhos aumenta, e ao acertar toda a sequência, o player sai da floresta e chega à Casa de Doces, onde se passará a fase 2.",
+                          ),
+                        ],
                       ),
                     ),
                     const SizedBox(height: 40),
@@ -95,7 +131,15 @@ class Fase1Page extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 45),
-
+                    const Text(
+                      "Inspiração:",
+                      style: TextStyle(
+                        color: AppTheme.accentColor,
+                        fontSize: 18,
+                        height: 1.5,
+                      ),
+                    ),
+                    const SizedBox(height: 15),
                     const Text(
                       'A referencia principal para a primeira fase (Floresta) do jogo foi o primeiro jogo da série/manga Alice in Borderland chamado de Viver ou Morrer nele o protagonista da história Arisu e mais quatro pessoas  tem que escolher entre duas portas uma escrita viver e outra morrer, utilizando esse jogo como referencia foi montado o puzzle dos caminhos na floresta onde o jogador terá dois ou mais caminhos e terá que escolher entre eles assim como Arisu seus amigos, a diferença é que se o jogador errar o caminho ele apenas volta para o início diferente da série/manga onde os personagens são "eliminados".',
                       style: TextStyle(
@@ -105,7 +149,6 @@ class Fase1Page extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 30),
-
                     ElevatedButton.icon(
                       onPressed: () => Navigator.pushNamed(context, '/home'),
                       icon: const Icon(Icons.arrow_back),
