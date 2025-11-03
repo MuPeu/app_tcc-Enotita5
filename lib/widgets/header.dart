@@ -10,10 +10,8 @@ class Header extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    // calcula largura das "laterais" (proporcional, mas limitada)
     final double sideWidth = min(max(size.width * 0.12, 56), 120);
-    // explicação: no mínimo 56px, no máximo 120px; ajusta conforme largura da tela
-
+    
     return Container(
       width: double.infinity,
       height: 100,
@@ -21,26 +19,32 @@ class Header extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child: Row(
         children: [
-          // Lado esquerdo (logo) — largura fixa = sideWidth
           SizedBox(
             width: sideWidth,
             child: Align(
               alignment: Alignment.centerLeft,
-              child: AspectRatio(
-                aspectRatio: 1,
-                child: DecoratedBox(
-                  decoration: const BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("src/assets/imgs/logo.png"),
-                      fit: BoxFit.contain,
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.pushNamedAndRemoveUntil(
+                    context,
+                    '/home',
+                    (route) => false,
+                  );
+                },
+                child: AspectRatio(
+                  aspectRatio: 1,
+                  child: DecoratedBox(
+                    decoration: const BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("src/assets/imgs/logo.png"),
+                        fit: BoxFit.contain,
+                      ),
                     ),
                   ),
                 ),
               ),
             ),
           ),
-
-          // Centro — ocupa o espaço restante; título centralizado exatamente no meio
           Expanded(
             child: Center(
               child: MediaQuery(
@@ -50,14 +54,12 @@ class Header extends StatelessWidget {
                   textAlign: TextAlign.center,
                   overflow: TextOverflow.ellipsis,
                   style: AppTheme.titleStyle.copyWith(
-                    fontSize: 28, // tamanho fixo que você deseja
+                    fontSize: 28,
                   ),
                 ),
               ),
             ),
           ),
-
-          // Lado direito (menu) — mesma largura = sideWidth
           SizedBox(
             width: sideWidth,
             child: Align(

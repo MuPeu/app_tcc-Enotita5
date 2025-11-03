@@ -150,7 +150,7 @@ class Fase3Page extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     ElevatedButton.icon(
-                      onPressed: () => Navigator.pushNamed(context, '/home'),
+                      onPressed: () => Navigator.pop(context),
                       icon: const Icon(Icons.arrow_back),
                       label: const Text('Voltar'),
                       style: ElevatedButton.styleFrom(
