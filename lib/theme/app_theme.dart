@@ -6,6 +6,7 @@ class AppTheme {
   static const Color secondaryColor = Color(0xFF2B1603); // Marrom fundo
   static const Color accentColor = Color(0xFFB58B00); // Dourado
   static const Color cardColor = Color(0xFF773E08); // Marrom dos cards
+  static const Color menuGreen = Color(0xFFA3A65E); // Verde do menu
 
   // 🖋️ Fontes e Estilos
   static const TextStyle titleStyle = TextStyle(

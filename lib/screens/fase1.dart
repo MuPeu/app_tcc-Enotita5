@@ -35,12 +35,12 @@ class Fase1Page extends StatelessWidget {
                       'A Floresta',
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: ResponsiveWrapper.getFontSize(context, 42),
+                        fontSize: ResponsiveWrapper.getFontSize(context, 50),
                         fontFamily: 'Lavishly Yours',
                         fontWeight: FontWeight.w400,
                       ),
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 15),
                     Text.rich(
                       TextSpan(
                         style: TextStyle(
@@ -117,11 +117,12 @@ class Fase1Page extends StatelessWidget {
                       "Guia:",
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: 18,
+                        fontFamily: 'Lavishly Yours',
+                        fontSize: 40,
                         height: 1.5,
                       ),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     const Text(
                       "Nessa fase, o Player terá que atravessar a floresta se orientando por trilhas de terra, ele terá inicialmente 3 caminhos para escolher, mas as opções vão aumentar conforme avança.\nAo escolher o caminho errado, ele será teletransportado para o começo da fase.\nO segredo para avançar é escolher o caminho com mais árvores de Ferga em volta (As árvores de tronco branco e folhas douradas)",
                       style: TextStyle(
@@ -135,11 +136,12 @@ class Fase1Page extends StatelessWidget {
                       "Inspiração:",
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: 18,
+                        fontFamily: 'Lavishly Yours',
+                        fontSize: 40,
                         height: 1.5,
                       ),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     const Text(
                       'A referencia principal para a primeira fase (Floresta) do jogo foi o primeiro jogo da série/manga Alice in Borderland chamado de Viver ou Morrer nele o protagonista da história Arisu e mais quatro pessoas  tem que escolher entre duas portas uma escrita viver e outra morrer, utilizando esse jogo como referencia foi montado o puzzle dos caminhos na floresta onde o jogador terá dois ou mais caminhos e terá que escolher entre eles assim como Arisu seus amigos, a diferença é que se o jogador errar o caminho ele apenas volta para o início diferente da série/manga onde os personagens são "eliminados".',
                       style: TextStyle(
@@ -150,7 +152,7 @@ class Fase1Page extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     ElevatedButton.icon(
-                      onPressed: () => Navigator.pop(context),
+                      onPressed: () => Navigator.pushNamed(context, '/home'),
                       icon: const Icon(Icons.arrow_back),
                       label: const Text('Voltar'),
                       style: ElevatedButton.styleFrom(

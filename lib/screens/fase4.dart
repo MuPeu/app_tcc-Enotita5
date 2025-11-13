@@ -35,7 +35,7 @@ class Fase4Page extends StatelessWidget {
                       'A Fuga',
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: ResponsiveWrapper.getFontSize(context, 42),
+                        fontSize: ResponsiveWrapper.getFontSize(context, 50),
                         fontFamily: 'Lavishly Yours',
                         fontWeight: FontWeight.w400,
                       ),
@@ -118,11 +118,12 @@ class Fase4Page extends StatelessWidget {
                       "Guia:",
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: 18,
+                        fontFamily: 'Lavishly Yours',
+                        fontSize: 40,
                         height: 1.5,
                       ),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     const Text(
                       "A Fase 4 se passara exatamente no mesmo lugar que a 2, porém agora o Player deve fazer o caminho contrário até a porta de entrada da casa,  agora, a casa estará impedindo sua fuga.\nFazendo com que prateleiras caiam e doces desabem sobre você.",
                       style: TextStyle(
@@ -136,11 +137,12 @@ class Fase4Page extends StatelessWidget {
                       "Inspiração:",
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: 18,
+                        fontFamily: 'Lavishly Yours',
+                        fontSize: 40,
                         height: 1.5,
                       ),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     const Text(
                       "A fase quatro é inspirada na última fase do jogo “Resident Evil 4” onde o protagonista Leon pilota um jet-ski por um caverna que está desmoronando , para sair desta caverna ele deve desviar dos obstáculos que estão em sua frente e nos que caem do teto , essa mecânica de correr enquanto desvia dos obstáculos é principal inspiração para a jogabilidade da desta fase.",
                       style: TextStyle(
@@ -151,7 +153,7 @@ class Fase4Page extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     ElevatedButton.icon(
-                      onPressed: () => Navigator.pop(context),
+                      onPressed: () => Navigator.pushNamed(context, '/home'),
                       icon: const Icon(Icons.arrow_back),
                       label: const Text('Voltar'),
                       style: ElevatedButton.styleFrom(

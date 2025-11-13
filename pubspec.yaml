@@ -19,3 +19,9 @@ flutter:
   uses-material-design: true
   assets:
     - src/assets/imgs/
+    - src/assets/fonts/
+  
+  fonts:
+    - family: Lavishly Yours
+      fonts:
+        - asset: src/assets/fonts/LavishlyYours-Regular.ttf

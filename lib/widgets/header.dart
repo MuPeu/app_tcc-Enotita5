@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'hambuger.dart';
 import '../theme/app_theme.dart';
 
 class Header extends StatelessWidget {
@@ -54,34 +55,16 @@ class Header extends StatelessWidget {
                   textAlign: TextAlign.center,
                   overflow: TextOverflow.ellipsis,
                   style: AppTheme.titleStyle.copyWith(
-                    fontSize: 28,
+                    fontSize: 55,
                   ),
                 ),
               ),
             ),
           ),
-          SizedBox(
-            width: sideWidth,
-            child: Align(
-              alignment: Alignment.centerRight,
-              child: SizedBox(
-                width: min(40, sideWidth * 0.9),
-                height: 40,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: List.generate(3, (i) {
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 3),
-                      child: Container(
-                        width: 30,
-                        height: 3,
-                        color: Colors.white,
-                      ),
-                    );
-                  }),
-                ),
-              ),
-            ),
+          HamburgerMenu(
+            onItemSelected: (item) {
+              debugPrint('Selecionado: ${item}');
+            },
           ),
         ],
       ),

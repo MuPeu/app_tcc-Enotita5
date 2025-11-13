@@ -35,7 +35,7 @@ class Fase3Page extends StatelessWidget {
                       'O Forno',
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: ResponsiveWrapper.getFontSize(context, 42),
+                        fontSize: ResponsiveWrapper.getFontSize(context, 50),
                         fontFamily: 'Lavishly Yours',
                         fontWeight: FontWeight.w400,
                       ),
@@ -117,11 +117,12 @@ class Fase3Page extends StatelessWidget {
                       "Guia:",
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: 18,
+                        fontFamily: 'Lavishly Yours',
+                        fontSize: 40,
                         height: 1.5,
                       ),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     const Text(
                       "A terceira fase se passara dentro de um forno, onde a protagonista enfrentara o coelho responsável pelo sequestro de seu irmão. A cena é composta por válvulas, engrenagens e componentes mecânicos, que rodeiam o centro circular do forno, formando uma espécie de arena. Todo o ambiente é fechado e claustrofóbico, Amelie enfrentara o coelho em um combate direto, ao redor da arena, haverão válvulas em varias direções, o objetivo é atrair o inimigo até  perto de uma válvula , em seguida, atirar nela e provocar uma jorrada de vapor que acertara o coelho e o deixará incapacitado por alguns segundos, que será quando você deve atacar o coelho o máximo possível até derrota-lo.",
                       style: TextStyle(
@@ -135,11 +136,12 @@ class Fase3Page extends StatelessWidget {
                       "Inspiração:",
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: 18,
+                        fontFamily: 'Lavishly Yours',
+                        fontSize: 40,
                         height: 1.5,
                       ),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     const Text(
                       "A fase três é inspirada na penúltima fase do jogo resident evill 3 remake onde a protagonista Jill luta contra seu inimigo chamado Nêmesis em sua forma animalesca e para derotalo ela deve atirar em botões localizados em baterias gigantes para que elas descaregem sua energia no Nêmesis na ora certa para que ele fique atordoado e ela possa atirar nele, iremos utilizar essa mecânica de maneira similar, o jogador deverá atirar em valvular no momento exato para atordoar seu inimigo assim como na inspiração.",
                       style: TextStyle(
@@ -150,7 +152,7 @@ class Fase3Page extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     ElevatedButton.icon(
-                      onPressed: () => Navigator.pop(context),
+                      onPressed: () => Navigator.pushNamed(context, '/home'),
                       icon: const Icon(Icons.arrow_back),
                       label: const Text('Voltar'),
                       style: ElevatedButton.styleFrom(

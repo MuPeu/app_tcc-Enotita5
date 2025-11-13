@@ -54,12 +54,12 @@ class FaseCard extends StatelessWidget {
             // Título da fase
             Positioned(
               left: 85,
-              top: 8,
+              top: 3,
               child: Text(
                 titulo,
                 style: const TextStyle(
                   color: AppTheme.accentColor,
-                  fontSize: 30,
+                  fontSize: 40,
                   fontFamily: 'Lavishly Yours',
                   fontWeight: FontWeight.w400,
                 ),
@@ -69,7 +69,7 @@ class FaseCard extends StatelessWidget {
             // Descrição
             Positioned(
               left: 85,
-              top: 35,
+              top: 45,
               child: SizedBox(
                 width: 270,
                 child: Text(

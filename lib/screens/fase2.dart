@@ -35,7 +35,7 @@ class Fase2Page extends StatelessWidget {
                       'Casa de Doces',
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: ResponsiveWrapper.getFontSize(context, 42),
+                        fontSize: ResponsiveWrapper.getFontSize(context, 50),
                         fontFamily: 'Lavishly Yours',
                         fontWeight: FontWeight.w400,
                       ),
@@ -117,11 +117,12 @@ class Fase2Page extends StatelessWidget {
                       "Guia:",
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: 18,
+                        fontFamily: 'Lavishly Yours',
+                        fontSize: 40,
                         height: 1.5,
                       ),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     const Text(
                       "Na fase 2 o Player terá que chegar a mesa gigante no outro lado da casa, ele deve escalar os móveis e pular até prateleiras na parede, e fazer parkour até chegar na mesa e resgatar seu irmão.",
                       style: TextStyle(
@@ -135,11 +136,12 @@ class Fase2Page extends StatelessWidget {
                       "Inspirações:",
                       style: TextStyle(
                         color: AppTheme.accentColor,
-                        fontSize: 18,
+                        fontFamily: 'Lavishly Yours',
+                        fontSize: 40,
                         height: 1.5,
                       ),
                     ),
-                    const SizedBox(height: 15),
+                    const SizedBox(height: 10),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -183,7 +185,7 @@ class Fase2Page extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     ElevatedButton.icon(
-                      onPressed: () => Navigator.pop(context),
+                      onPressed: () => Navigator.pushNamed(context, '/home'),
                       icon: const Icon(Icons.arrow_back),
                       label: const Text('Voltar'),
                       style: ElevatedButton.styleFrom(
