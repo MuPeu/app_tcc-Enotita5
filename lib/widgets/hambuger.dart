@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import './header.dart';
 
 class HamburgerMenu extends StatefulWidget {
   final Function(String) onItemSelected;
@@ -53,12 +54,13 @@ class _HamburgerMenuState extends State<HamburgerMenu>
   }
 
   OverlayEntry _createOverlay(BuildContext context) {
-    final renderBox = context.findRenderObject() as RenderBox;
+    final headerContext = Header.headerKey.currentContext!;
+    final renderBox = headerContext.findRenderObject() as RenderBox;
     final position = renderBox.localToGlobal(Offset.zero);
 
     return OverlayEntry(
       builder: (context) => Positioned(
-        top: position.dy + renderBox.size.height, // abaixo do header
+        top: position.dy + renderBox.size.height + 5, // abaixo do header
         right: 10,
         child: Material(
           color: Colors.transparent,

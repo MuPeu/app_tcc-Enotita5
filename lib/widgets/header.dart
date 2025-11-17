@@ -7,6 +7,8 @@ class Header extends StatelessWidget {
   final String title;
   const Header({super.key, required this.title});
 
+  static final GlobalKey headerKey = GlobalKey();
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -14,6 +16,7 @@ class Header extends StatelessWidget {
     final double sideWidth = min(max(size.width * 0.12, 56), 120);
     
     return Container(
+      key: Header.headerKey,
       width: double.infinity,
       height: 100,
       color: AppTheme.primaryColor,
