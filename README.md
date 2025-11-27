@@ -11,8 +11,8 @@
     </ul>
   </nav>
 
-  <section align=center>
-    <h2>Integrantes</h2>
+  <section>
+    <h2 align=center>Integrantes</h2>
     <ul>
       <li>Gustavo da Silva Rezende</li>
       <li>João Paulo B.P. de Carvalho Filho</li>
