@@ -6,7 +6,7 @@
       <li><a href="https://github.com/MuPeu/app_tcc-Enotita5/wiki">📘 Wiki</a></li>
       <li><a href="https://github.com/MuPeu/app_tcc-Enotita5/wiki/Estrutura-do-Projeto">📁 Estrutura</a></li>
       <li><a href="https://github.com/MuPeu/app_tcc-Enotita5/wiki/Funcionamento-do-Aplicativo">📱 Funcionamento</a></li>
-      <li><a href="https://github.com/MuPeu/app_tcc-Enotita5/wiki/Explica%C3%A7%C3%A3o-do-C%C3%B3dig">💻 Código</a></li>
+      <li><a href="https://github.com/MuPeu/app_tcc-Enotita5/wiki/Explica%C3%A7%C3%A3o-do-C%C3%B3digo">💻 Código</a></li>
       <li><a href="https://github.com/MuPeu/app_tcc-Enotita5/wiki/Conceitos-Utilizados-no-Flutter">🧠 Conceitos</a></li>
     </ul>
   </nav>
